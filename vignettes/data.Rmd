@@ -1,0 +1,57 @@
+---
+title: "VOT datasets"
+author: "Dave Kleinschmidt"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+```{r}
+
+library(dplyr)
+library(ggplot2)
+devtools::load_all()
+
+```
+
+# Size of each data set #
+
+## Number of talkers ##
+
+```{r results='asis'}
+vot %>%
+  group_by(source, subject) %>%
+  summarise() %>%
+  tally() %>%
+  knitr::kable()
+
+
+```
+
+## Tokens of each phoneme per talker ##
+
+```{r results='asis'}
+vot %>%
+  group_by(source, phoneme, subject) %>%
+  tally() %>%
+  summarise_each(funs(mean, min, max, n_talker=length), n) %>%
+  knitr::kable(digits=0)
+```
+
+# Marginal distributions #
+
+```{r fig.width=10, fig.height=6, out.width='100%'}
+ggplot(vot, aes(x=vot, color=phoneme)) +
+  geom_density() +
+  facet_wrap(~source)
+```
+
+```{r fig.width=10, fig.height=6, out.width='100%'}
+ggplot(vot, aes(x=vot, color=phoneme, group=subject)) +
+  geom_density() +
+  facet_wrap(~source)
+```
