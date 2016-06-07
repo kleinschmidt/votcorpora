@@ -23,6 +23,7 @@ lev_ari_sentences <-
             word = word,
             sex = sex,
             age = age,
+            age_group = ifelse(age < 40, 'y', 'o'),
             bilingual = TRUE)
 
 lev_ari_convo <- read_excel('VOT conversation results.xlsx') %>%
@@ -33,6 +34,7 @@ lev_ari_convo <- read_excel('VOT conversation results.xlsx') %>%
             prevoiced = NA,
             word = word,
             sex = sex,
+            age_group = ifelse(age < 40, 'y', 'o'),
             age = age,
             bilingual = TRUE)
 

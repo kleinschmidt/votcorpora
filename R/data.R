@@ -26,7 +26,7 @@
 #'   measured.}
 #'
 #' \item{buckeye}{VOTs extracted from the Buckeye Corpus of conversational
-#'   speech by Andy Wedel. Age is coded as old (over 40) or young (under 30).}
+#'   speech by Andy Wedel. Age is coded as old (40+) or young (under 40).}
 #' 
 #' }
 #' 
