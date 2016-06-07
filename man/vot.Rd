@@ -4,7 +4,7 @@
 \name{vot}
 \alias{vot}
 \title{Combined VOT production data}
-\format{A data frame with NNN observations of NNN variables:
+\format{A data frame with 14,262 observations of 12 variables:
 \describe{
 \item{source}{The source of this observation}
 \item{subject}{ID of the talker that produced this observation}
@@ -20,6 +20,9 @@
   under 30; based on the Buckeye Corpus scheme).}
 \item{bilingual}{TRUE for French-English bilinguals, FALSE for english
   monolinguals}
+\item{voicing}{Is the phoneme \code{voiced} or \code{voiceless}.}
+\item{place}{Place of articulation. \code{cor} for coronal, \code{lab} for
+  labial, and \code{dor} for dorsal.}
 }}
 \usage{
 vot

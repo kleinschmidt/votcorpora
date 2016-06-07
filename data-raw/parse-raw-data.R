@@ -90,11 +90,18 @@ buckeye <- bind_rows(read_csv('Wedel_VoicelessStopDataFromBuckeye.csv'),
 
 # Put it all together
 
+stops <- data_frame(phoneme = c('b', 'd', 'g', 'p', 't', 'k'),
+                    voicing = rep(factor(c('voiced', 'voiceless')), each=3),
+                    place = rep(factor(c('lab', 'cor', 'dor'),
+                                       levels = c('lab', 'cor', 'dor')),
+                                times=2))
+
 vot <- bind_rows(lev_ari_sentences,
                  lev_ari_convo,
                  goldrick2013,
                  baeseberk_goldrick2009,
                  buckeye) %>%
+  left_join(stops) %>%
   mutate(phoneme = factor(tolower(phoneme),
                           levels = c('b', 'd', 'g', 'p', 't', 'k')))
 
