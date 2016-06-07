@@ -6,6 +6,7 @@ library(stringr)
 
 # read in data
 
+# Lev-Ari sentences and conversations
 fowler_items <-
   read_csv('fowler-items.csv') %>%
   gather(phoneme, word, p:k) %>%
@@ -23,7 +24,7 @@ lev_ari_sentences <-
             sex = sex,
             age = age,
             bilingual = TRUE)
-         
+
 lev_ari_convo <- read_excel('VOT conversation results.xlsx') %>%
   transmute(source = 'levari-convo',
             subject = str_c('la_', subject),
@@ -35,6 +36,7 @@ lev_ari_convo <- read_excel('VOT conversation results.xlsx') %>%
             age = age,
             bilingual = TRUE)
 
+# Goldrick et al. (2013) and Baese-Berk & Goldrick (2009)
 goldrick2013_sex <- read_tsv('voiced-initial-gender.tsv') %>%
   mutate(Subject = as.numeric(Subject),
          Sex = tolower(Sex))
@@ -65,11 +67,32 @@ baeseberk_goldrick2009 <- read_csv('BBG-Trimmed.csv') %>%
             age = NA,
             bilingual = FALSE)
 
+# Wedel/Buckeye
+
+buckeye_speakers <- read_csv('buckeye-speakers.csv') %>%
+  mutate(speaker = tolower(speaker))
+
+buckeye <- bind_rows(read_csv('Wedel_VoicelessStopDataFromBuckeye.csv'),
+                     read_csv('Wedel_VoicedStopDataFromBuckeye.csv')) %>%
+  left_join(buckeye_speakers, by=c(Speaker='speaker')) %>%
+  transmute(source = 'buckeye',
+            subject = str_c('buckeye_', Speaker),
+            phoneme = Phoneme,
+            vot = VOT * 1000,
+            prevoiced = NA,
+            word = Ortho,
+            sex = speaker_gender,
+            age_group = speaker_age,
+            bilingual = FALSE)
+
+
+# Put it all together
 
 vot <- bind_rows(lev_ari_sentences,
                  lev_ari_convo,
                  goldrick2013,
-                 baeseberk_goldrick2009) %>%
+                 baeseberk_goldrick2009,
+                 buckeye) %>%
   mutate(phoneme = factor(tolower(phoneme),
                           levels = c('b', 'd', 'g', 'p', 't', 'k')))
 

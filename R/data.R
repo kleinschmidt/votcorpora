@@ -24,6 +24,9 @@
 #' \item{levari-convo}{A subset of the talkers from \code{levari-sent} conducted
 #'   interviews, from which VOTs of all word-initial voiceless stops were
 #'   measured.}
+#'
+#' \item{buckeye}{VOTs extracted from the Buckeye Corpus of conversational
+#'   speech by Andy Wedel. Age is coded as old (over 40) or young (under 30).}
 #' 
 #' }
 #' 
@@ -40,6 +43,8 @@
 #' \item{sex}{The sex of the talker ('m' or 'f'), NA if missing (\code{bbg09}).}
 #' \item{age}{The age of the talker, NA if missing (\code{bbg09} and
 #'   \code{gva13}).}
+#' \item{age_group}{The age group of the talker ('o' for over 40, and 'y' for
+#'   under 30; based on the Buckeye Corpus scheme).}
 #' \item{bilingual}{TRUE for French-English bilinguals, FALSE for english
 #'   monolinguals}
 #' }
