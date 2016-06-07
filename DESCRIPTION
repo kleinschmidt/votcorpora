@@ -1,0 +1,9 @@
+Package: votcorpora
+Title: VOT production data from various sources
+Version: 0.0.0.9000
+Authors@R: person("Dave", "Kleinschmidt", email = "dave.f.kleinschmidt@gmail.com", role = c("aut", "cre"))
+Description: Data from Baese-Berk & Goldrick 2009, and Goldrick et al. 2013, and Lev Ari et al.
+Depends: R (>= 3.3.0)
+License: MIT
+Encoding: UTF-8
+LazyData: true
