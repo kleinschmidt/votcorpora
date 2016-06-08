@@ -51,7 +51,7 @@ ggplot(vot, aes(x=vot, color=phoneme)) +
 ```
 
 ```{r fig.width=10, fig.height=6, out.width='100%'}
-ggplot(vot, aes(x=vot, color=phoneme, group=subject)) +
-  geom_density() +
+ggplot(vot, aes(x=vot, color=phoneme, group=paste(phoneme,subject))) +
+  stat_density(alpha=0.2, geom='line', position='identity') +
   facet_wrap(~source)
 ```
