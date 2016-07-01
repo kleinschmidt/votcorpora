@@ -101,9 +101,9 @@ vot <- bind_rows(lev_ari_sentences,
                  goldrick2013,
                  baeseberk_goldrick2009,
                  buckeye) %>%
+  mutate(phoneme = tolower(phoneme)) %>%
   left_join(stops) %>%
-  mutate(phoneme = factor(tolower(phoneme),
-                          levels = c('b', 'd', 'g', 'p', 't', 'k')))
+  mutate(phoneme = factor(phoneme, levels = c('b', 'd', 'g', 'p', 't', 'k')))
 
 devtools::use_data(vot, overwrite=TRUE)
 
