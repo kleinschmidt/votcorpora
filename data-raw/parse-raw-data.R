@@ -49,7 +49,7 @@ goldrick2013 <- read_tsv('Goldrick2013_voicedInitial.txt') %>%
             subject = str_c('gva13_', Subject),
             phoneme = Consonant,
             vot = VOT * 1000,
-            prevoiced = Prevoiced != 1,
+            prevoiced = Prevoiced %>% round() %>% as.logical(),
             word = Word,
             sex = Sex,
             age = NA,
