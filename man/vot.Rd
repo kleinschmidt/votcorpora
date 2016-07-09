@@ -20,6 +20,8 @@
   under 30; based on the Buckeye Corpus scheme).}
 \item{bilingual}{TRUE for French-English bilinguals, FALSE for english
   monolinguals}
+\item{speech_rate}{The local speech rate (for Buckeye only) in syllables per
+  second.}
 \item{voicing}{Is the phoneme \code{voiced} or \code{voiceless}.}
 \item{place}{Place of articulation. \code{cor} for coronal, \code{lab} for
   labial, and \code{dor} for dorsal.}
