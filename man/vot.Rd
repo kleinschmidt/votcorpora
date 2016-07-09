@@ -21,7 +21,8 @@
 \item{bilingual}{TRUE for French-English bilinguals, FALSE for english
   monolinguals}
 \item{speech_rate}{The local speech rate (for Buckeye only) in syllables per
-  second.}
+  second. This is calculated based on the number of vowels in the continuous
+  speech window around the word where VOT was extracted.}
 \item{voicing}{Is the phoneme \code{voiced} or \code{voiceless}.}
 \item{place}{Place of articulation. \code{cor} for coronal, \code{lab} for
   labial, and \code{dor} for dorsal.}
