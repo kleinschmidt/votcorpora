@@ -23,6 +23,8 @@
 \item{speech_rate}{The local speech rate (for Buckeye only) in syllables per
   second. This is calculated based on the number of vowels in the continuous
   speech window around the word where VOT was extracted.}
+\item{stop_length}{The length of the whole stop, from burst to following
+  sonorant onset (Buckeye only), in ms.}
 \item{voicing}{Is the phoneme \code{voiced} or \code{voiceless}.}
 \item{place}{Place of articulation. \code{cor} for coronal, \code{lab} for
   labial, and \code{dor} for dorsal.}
@@ -57,10 +59,13 @@ The sources are
   interviews, from which VOTs of all word-initial voiceless stops were
   measured.}
 
-\item{buckeye}{VOTs extracted from the Buckeye Corpus of conversational
-  speech by Andy Wedel. Age is coded as old (40+) or young (under 40).}
+\item{buckeye}{Nelson, Noah & Wedel, Andrew (under revision).  The phonetic
+  specificity of competition: Contrastive hyperarticulation of voice onset
+  time in conversational English.  VOTs manually extracted from the Buckeye
+  Corpus of conversational speech by Andy Wedel. Age is coded as old (40+) or
+  young (under 40).  Includes two measures of local speech rate, syllables
+  per second and total stop length.}
 
 }
 }
 \keyword{datasets}
-

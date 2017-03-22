@@ -86,7 +86,8 @@ buckeye <- bind_rows(read_csv('Wedel_VoicelessStopDataFromBuckeye.csv'),
             sex = speaker_gender,
             age_group = speaker_age,
             bilingual = FALSE,
-            speech_rate = SpeechRate)
+            speech_rate = SpeechRate,
+            stop_length = StopLength * 1000)
 
 
 # Put it all together
