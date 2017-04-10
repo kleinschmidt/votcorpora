@@ -17,8 +17,11 @@ This package collects a number of small VOT corpora from different sources:
   Rowlanda, & Halle, 2008). A subset of the talkers also conducted interviews,
   from which VOTs of all word-initial voiceless stops were measured.
 
-* Buckeye: VOTs extracted from the Buckeye Corpus of conversational speech by
-  Andy Wedel. Age is coded as old (40+) or young (under 40).
+* Buckeye (Nelson, N. & Wedel, A., _under revision_). VOTs hand-annotated from word-initial
+  voice and voiceless stops in the Buckeye Corpus of conversational speech by
+  Andy Wedel and Noah Nelson.  Age is coded as old (40+) or young (under 40).
+  Includes stop length and local speech rate information, but no pre-voiced
+  tokens.
 
 The first two are from isolated word list reading, the third from sentences and
 conversational speech and the fourth from conversational speech. All are from
