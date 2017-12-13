@@ -1,3 +1,6 @@
+#' @import tibble
+NULL
+
 #' Combined VOT production data
 #'
 #' Word initial VOT measurements from four different production experiments. Two
