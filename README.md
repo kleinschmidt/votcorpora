@@ -38,7 +38,7 @@ Buckeye data.__
 # Installation
 
 ```r
-devtools::install_github("kleinschmidt/votcorpora")
+devtools::install_github("kleinschmidt/votcorpora", build_vignettes=TRUE)
 ```
 
 # Usage
