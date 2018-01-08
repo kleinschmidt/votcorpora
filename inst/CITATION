@@ -1,0 +1,55 @@
+bibentry(
+  bibtype = "Article",
+  title = "The Effects of Lexical Neighbors on Stop Consonant Articulation.",
+  volume = "134",
+  doi = "10.1121/1.4812821",
+  number = "2",
+  journal = "The Journal of the Acoustical Society of America",
+  author = c(person("Matthew", "Goldrick"),
+             person("Charlotte", "Vaughn"),
+             person("Amanda", "Murphy")),
+  year = "2013",
+  pages = "EL172--7",
+  textVersion = "Goldrick, M., Vaughn, C., & Murphy, A. (2013). The effects of lexical neighbors on stop consonant articulation. The Journal of the Acoustical Society of America, 134(2), EL172-7. https://doi.org/10.1121/1.4812821"
+)
+
+bibentry(
+  bibtype = "Article",
+  title = "Mechanisms of Interaction in Speech Production",
+  volume = "24",
+  doi = "10.1080/01690960802299378",
+  number = "4",
+  journal = "Language and Cognitive Processes",
+  author = c(person("Melissa", "Baese-Berk"),
+             person("Matthew", "Goldrick")),
+  year = "2009",
+  pages = "527-554",
+  textVersion = "Baese-Berk, M., & Goldrick, M. (2009). Mechanisms of interaction in speech production. Language and Cognitive Processes, 24(4), 527–554. https://doi.org/10.1080/01690960802299378"
+)
+
+bibentry(
+  bibtype = "Article",
+  author = c(person("Noah Richard", "Nelson"),
+             person("Andrew", "Wedel")),
+  year = "2017",
+  doi = "10.1016/j.wocn.2017.01.008",
+  journal = "Journal of Phonetics",
+  pages = "1-20",
+  title = "The phonetic specificity of competition: Contrastive hyperarticulation of voice onset time in conversational English",
+  volume = "e-pub",
+  textVersion = "Nelson, N. R., & Wedel, A. (2017). The phonetic specificity of competition: Contrastive hyperarticulation of voice onset time in conversational English. Journal of Phonetics, e-pub, 1–20. https://doi.org/10.1016/j.wocn.2017.01.008"
+)
+
+bibentry(
+  bibtype = "Article",
+  title = "Low Inhibitory Skill Leads to Non-Native Perception and Production in Bilinguals' Native Language",
+  volume = "41",
+  doi = "10.1016/j.wocn.2013.06.002",
+  number = "5",
+  journal = "Journal of Phonetics",
+  author = c(person("Shiri", "Lev-Ari"),
+             person("Sharon", "Peperkamp")),
+  year = "2013",
+  pages = "320-33",
+  textVersion = "Lev-Ari, S., & Peperkamp, S. (2013). Low inhibitory skill leads to non-native perception and production in bilinguals’ native language. Journal of Phonetics, 41(5), 320–331. https://doi.org/10.1016/j.wocn.2013.06.002"
+)
