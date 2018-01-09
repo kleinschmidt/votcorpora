@@ -17,7 +17,9 @@ This package collects a number of small VOT corpora from different sources:
   read 16 sentences, 10 of which contained one word each starting with /p/, /t/,
   and /k/. (Items are the English sentences from Fowler, Sramkoc, Ostrya,
   Rowlanda, & Halle, 2008). A subset of the talkers also conducted interviews,
-  from which VOTs of all word-initial voiceless stops were measured.
+  from which VOTs of all word-initial voiceless stops were measured.  Supported
+  by Fondation Pierre-Gilles de Gennes and Agence Nationale de la Recherche
+  (ANR-2010-BLAN-1901, ANR-10-LABX-0087 and ANR-10-IDEX-0001-02).
 
 * Buckeye (Nelson, N. & Wedel, A., _e-pub ahead of print_). VOTs
   automatically annotated from word-initial voice and voiceless stops in the
