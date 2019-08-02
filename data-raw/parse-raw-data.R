@@ -90,7 +90,7 @@ buckeye <- bind_rows(read_csv('Wedel_VoicelessStopDataFromBuckeye.csv'),
             stop_length = StopLength * 1000)
 
 
-# Allen and Miller JASA (1999)
+# Allen and Miller (1999)
 
 allen_miller <- read_csv('allen_miller_JASA_1999_data.csv')
 
