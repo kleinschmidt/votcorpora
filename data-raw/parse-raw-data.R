@@ -90,6 +90,21 @@ buckeye <- bind_rows(read_csv('Wedel_VoicelessStopDataFromBuckeye.csv'),
             stop_length = StopLength * 1000)
 
 
+# Allen and Miller JASA (1999)
+
+allen_miller <- read_csv('allen_miller_JASA_1999_data.csv')
+
+allen_miller <- allen_miller %>% 
+  transmute(source = 'allen-miller',
+            subject = str_c('am', sub_id, sep='_'),
+            phoneme = str_sub(word, 1, 1),
+            vot = VOT,
+            prevoiced = NA,
+            word = word,
+            sex = NA,
+            age = NA,
+            bilingual = FALSE)
+  
 # Put it all together
 
 stops <- data_frame(phoneme = c('b', 'd', 'g', 'p', 't', 'k'),
@@ -102,7 +117,8 @@ vot <- bind_rows(lev_ari_sentences,
                  lev_ari_convo,
                  goldrick2013,
                  baeseberk_goldrick2009,
-                 buckeye) %>%
+                 buckeye, 
+                 allen_miller) %>%
   mutate(phoneme = tolower(phoneme)) %>%
   left_join(stops) %>%
   mutate(phoneme = factor(phoneme, levels = c('b', 'd', 'g', 'p', 't', 'k')))
