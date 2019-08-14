@@ -20,7 +20,7 @@ NULL
 #'   \code{bbg09} but with voiced stops.}
 #'   
 #' \item{allen-miller}{Allen & Miller (1999). Experiment 1 was similar to \code{gva13}
-#'   and measured VOTs for voiced stops in monosyllabic words. Experiment 2 was the 
+#'   and measured VOTs for voiced and voiceless stops in monosyllabic words. Experiment 2 was the 
 #'   same as Experiment 1 but included the additional manipulation of speaking rate 
 #'   (fast and slow)  }
 #'
