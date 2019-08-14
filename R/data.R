@@ -34,6 +34,11 @@ NULL
 #'   Corpus of conversational speech by Andy Wedel. Age is coded as old (40+) or
 #'   young (under 40).  Includes two measures of local speech rate, syllables
 #'   per second and total stop length.}
+#'   
+#' \item{allen-miller}{Allen & Miller (1999). Experiment 1 was similar to \code{gva13}
+#'   and measured VOTs for voiced stops in monosyllabic words. Experiment 2 was the 
+#'   same as Experiment 1 but included the additional manipulation of speaking rate 
+#'   (fast and slow)  }
 #' 
 #' }
 #' 

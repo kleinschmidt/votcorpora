@@ -53,3 +53,16 @@ bibentry(
   pages = "320-33",
   textVersion = "Lev-Ari, S., & Peperkamp, S. (2013). Low inhibitory skill leads to non-native perception and production in bilinguals’ native language. Journal of Phonetics, 41(5), 320–331. https://doi.org/10.1016/j.wocn.2013.06.002"
 )
+
+bibentry(
+  bibtype = "Article",
+  title = "Effects of syllable-initial voicing and speaking rate on the temporal characteristics of monosyllabic words.",
+  volume = "106",
+  doi = "doi:10.1121/1.427949",
+  number = "4",
+  journal = "The Journal of the Acoustical Society of America",
+  author = "Allen, J S and Miller, J L",
+  year = "1999",
+  pages = "2031,2039",
+  textVersion = "Allen, J S, Miller, J L.(1999) Effects of syllable-initial voicing and speaking rate on the temporal characteristics of monosyllabic words. The Journal of the Acoustical Society of America. 1999;106(4):2031-2039. doi:10.1121/1.427949"
+)
