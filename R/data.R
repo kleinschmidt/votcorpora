@@ -18,6 +18,11 @@ NULL
 #'
 #' \item{gva13}{Goldrick, Vaughn, & Murphy (2013), experiment 1 is analogous to
 #'   \code{bbg09} but with voiced stops.}
+#'   
+#' \item{allen-miller}{Allen & Miller (1999). Experiment 1 was similar to \code{gva13}
+#'   and measured VOTs for voiced stops in monosyllabic words. Experiment 2 was the 
+#'   same as Experiment 1 but included the additional manipulation of speaking rate 
+#'   (fast and slow)  }
 #'
 #' \item{levari-sent}{Lev-Ari, S., & Peperkamp, S. (2013). English-French
 #'   bilinguals (English L1) read 16 sentences, 10 of which contained one word
@@ -35,10 +40,6 @@ NULL
 #'   young (under 40).  Includes two measures of local speech rate, syllables
 #'   per second and total stop length.}
 #'   
-#' \item{allen-miller}{Allen & Miller (1999). Experiment 1 was similar to \code{gva13}
-#'   and measured VOTs for voiced stops in monosyllabic words. Experiment 2 was the 
-#'   same as Experiment 1 but included the additional manipulation of speaking rate 
-#'   (fast and slow)  }
 #' 
 #' }
 #' 

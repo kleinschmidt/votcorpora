@@ -150,6 +150,12 @@ library(votcorpora)
 #>      gva13 Goldrick, Vaughn, & Murphy (2013), experiment 1 is analogous
 #>           to ‘bbg09’ but with voiced stops.
 #>
+#>      allen-miller Allen & Miller (1991), experiment 1 measured VOTs 
+#>           for voiced and voiceless stops in monosyllabic words.
+#>           experiment 2 included a subset of word pairs from
+#>           experiment 1 as well as the additional manipulation 
+#>           of speaking rate (fast and slow). 
+#>
 #>      levari-sent Lev-Ari, S., & Peperkamp, S. (2013). English-French
 #>           bilinguals (English L1) read 16 sentences, 10 of which
 #>           contained one word each starting with /p/, /t/, and /k/.
@@ -167,6 +173,7 @@ library(votcorpora)
 #>           conversational speech by Andy Wedel. Age is coded as old
 #>           (40+) or young (under 40).  Includes two measures of local
 #>           speech rate, syllables per second and total stop length.
+#>
 #>
 ```
 
@@ -189,6 +196,12 @@ citation("votcorpora")
 #>   in speech production. Language and Cognitive Processes, 24(4),
 #>   527–554. https://doi.org/10.1080/01690960802299378
 #>
+#>   Allen, J S, Miller, J L (1999). Effects of syllable-initial 
+#>   voicing and speaking rate on the temporal     characteristics of 
+#>   monosyllabic words. The Journal of the Acoustical Society of 
+#>   America. 1999;106(4):2031-2039. 
+#>   https://doi:10.1121/1.427949
+#>
 #>   Nelson, N. R., & Wedel, A. (2017). The phonetic specificity of
 #>   competition: Contrastive hyperarticulation of voice onset time
 #>   in conversational English. Journal of Phonetics, e-pub, 1–20.
@@ -198,12 +211,7 @@ citation("votcorpora")
 #>   to non-native perception and production in bilinguals’ native
 #>   language. Journal of Phonetics, 41(5), 320–331.
 #>   https://doi.org/10.1016/j.wocn.2013.06.002
-
-#>   Allen, J S, Miller, J L (1999). Effects of syllable-initial 
-#>   voicing and speaking rate on the temporal     characteristics of 
-#>   monosyllabic words. The Journal of the Acoustical Society of 
-#>   America. 1999;106(4):2031-2039. 
-#>   https://doi:10.1121/1.427949
+#>
 #>
 #> To see these entries in BibTeX format, use 'print(<citation>,
 #> bibtex=TRUE)', 'toBibtex(.)', or set
