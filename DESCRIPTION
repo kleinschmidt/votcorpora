@@ -1,6 +1,6 @@
 Package: votcorpora
 Title: VOT production data from various sources
-Version: 1.0.1
+Version: 1.1.0
 Authors@R: c(person("Melissa", "Baese-Berk", role = "aut" ),
              person("Matthew", "Goldrick", role = "aut"),
              person("Shiri", "Lev-Ari", role = "aut" ),
@@ -9,9 +9,11 @@ Authors@R: c(person("Melissa", "Baese-Berk", role = "aut" ),
              person("Sharon", "Peperkamp", role = "aut" ),
              person("Charlotte", "Vaughn", role = "aut" ),
              person("Andrew", "Wedel", role = "aut" ),
+             person("Sean", "Allen", role = "aut"),
+             person("Joanne", "Miller", role = "aut"),
              person("Dave", "Kleinschmidt", email = "dave.f.kleinschmidt@gmail.com", role = c("cre", "com")))
 Description: VOT measurements from word-initial stops from a variety of sources:
-    Baese-Berk & Goldrick (2009), Goldrick, Vaughn, and Murphy (2013), Lev-Ari
+    Baese-Berk & Goldrick (2009), Goldrick, Vaughn, and Murphy (2013), Allen and Miller (1999), Lev-Ari
     and Peperkamp (2013), and Nelson and Wedel (2017).
 Depends:
     R (>= 3.3.0)
@@ -24,4 +26,4 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
