@@ -10,7 +10,7 @@ Authors@R: c(person("Melissa", "Baese-Berk", role = "aut" ),
              person("Charlotte", "Vaughn", role = "aut" ),
              person("Andrew", "Wedel", role = "aut" ),
              person("Sean", "Allen", role = "aut"),
-             person("Joanne", "Miller", role = "aut")
+             person("Joanne", "Miller", role = "aut"),
              person("Dave", "Kleinschmidt", email = "dave.f.kleinschmidt@gmail.com", role = c("cre", "com")))
 Description: VOT measurements from word-initial stops from a variety of sources:
     Baese-Berk & Goldrick (2009), Goldrick, Vaughn, and Murphy (2013), Allen and Miller (1999), Lev-Ari
