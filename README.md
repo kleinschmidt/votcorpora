@@ -150,11 +150,11 @@ library(votcorpora)
 #>      gva13 Goldrick, Vaughn, & Murphy (2013), experiment 1 is analogous
 #>           to ‘bbg09’ but with voiced stops.
 #>
-#>      allen-miller Allen & Miller (1991), experiment 1 measured VOTs 
+#>      allen-miller Allen & Miller (1991), experiment 1 measured VOTs
 #>           for voiced and voiceless stops in monosyllabic words.
 #>           experiment 2 included a subset of word pairs from
-#>           experiment 1 as well as the additional manipulation 
-#>           of speaking rate (fast and slow). 
+#>           experiment 1 as well as the additional manipulation
+#>           of speaking rate (fast and slow).
 #>
 #>      levari-sent Lev-Ari, S., & Peperkamp, S. (2013). English-French
 #>           bilinguals (English L1) read 16 sentences, 10 of which
@@ -196,10 +196,10 @@ citation("votcorpora")
 #>   in speech production. Language and Cognitive Processes, 24(4),
 #>   527–554. https://doi.org/10.1080/01690960802299378
 #>
-#>   Allen, J S, Miller, J L (1999). Effects of syllable-initial 
-#>   voicing and speaking rate on the temporal     characteristics of 
-#>   monosyllabic words. The Journal of the Acoustical Society of 
-#>   America. 1999;106(4):2031-2039. 
+#>   Allen, J S, Miller, J L (1999). Effects of syllable-initial
+#>   voicing and speaking rate on the temporal characteristics of
+#>   monosyllabic words. The Journal of the Acoustical Society of
+#>   America. 1999;106(4):2031-2039.
 #>   https://doi:10.1121/1.427949
 #>
 #>   Nelson, N. R., & Wedel, A. (2017). The phonetic specificity of
