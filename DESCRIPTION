@@ -1,6 +1,6 @@
 Package: votcorpora
 Title: VOT production data from various sources
-Version: 1.1.0
+Version: 1.1.1
 Authors@R: c(person("Melissa", "Baese-Berk", role = "aut" ),
              person("Matthew", "Goldrick", role = "aut"),
              person("Shiri", "Lev-Ari", role = "aut" ),
@@ -26,4 +26,4 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.0

@@ -19,10 +19,14 @@ NULL
 #' \item{gva13}{Goldrick, Vaughn, & Murphy (2013), experiment 1 is analogous to
 #'   \code{bbg09} but with voiced stops.}
 #'   
-#' \item{allen-miller}{Allen & Miller (1999). Experiment 1 was similar to \code{gva13}
-#'   and measured VOTs for voiced and voiceless stops in monosyllabic words. Experiment 2 was the 
-#'   same as Experiment 1 but included the additional manipulation of speaking rate 
-#'   (fast and slow)  }
+#' \item{allen-miller}{Allen & Miller (1999). Experiment 1 was similar to
+#'   \code{gva13} and measured VOTs for voiced and voiceless stops in
+#'   monosyllabic words from . Experiment 2 was the same as Experiment 1 but
+#'   included the additional manipulation of speaking rate (fast and
+#'   slow). Prevoiced stops and errors are coded as NA. Since all words were
+#'   monosyllabic with a final stop consonant, the stop consonant phoneme is
+#'   included (\code{final_phoneme}), as is the measurements of closure and
+#'   aspiration duration (\code{final_closure} and \code{final_aspiration}).}
 #'
 #' \item{levari-sent}{Lev-Ari, S., & Peperkamp, S. (2013). English-French
 #'   bilinguals (English L1) read 16 sentences, 10 of which contained one word
@@ -49,7 +53,13 @@ NULL
 #' \item{source}{The source of this observation}
 #' \item{subject}{ID of the talker that produced this observation}
 #' \item{phoneme}{Phoneme whose VOT was measured}
+#' \item{final_phoneme}{Final phoneme in the word (\code{allen-miller} only; all
+#'   voiced/voiceless stops)}
 #' \item{vot}{Voice onset time in ms}
+#' \item{vowel_duration}{Duration of the following vowel in ms}
+#' \item{final_closure}{Closure duration of final stop (\code{allen-miller} only).}
+#' \item{final_aspiration}{Duration of release burst of final stop
+#'   (\code{allen-miller} only).}
 #' \item{prevoiced}{For voiced stops, TRUE if prevoicing was present, FALSE if
 #'   not. NA for voiceless stops}
 #' \item{word}{Word that the phoneme occurred in}
@@ -63,6 +73,10 @@ NULL
 #' \item{speech_rate}{The local speech rate (for Buckeye only) in syllables per
 #'   second. This is calculated based on the number of vowels in the continuous
 #'   speech window around the word where VOT was extracted.}
+#' \item{speech_rate_condition}{Allen & Miller (1999) elicited slow and fast
+#'   speech rates in their Experiment 2 by varying the instructions and the time
+#'   that the word was displayed (1500ms for the "slow" rate, and 750ms for the
+#'   "fast" rate)}.
 #' \item{stop_length}{The length of the whole stop, from burst to following
 #'   sonorant onset (Buckeye only), in ms.}
 #' \item{voicing}{Is the phoneme \code{voiced} or \code{voiceless}.}

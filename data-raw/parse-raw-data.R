@@ -96,9 +96,19 @@ allen_miller <- read_csv('allen_miller_JASA_1999_data.csv')
 
 allen_miller <- allen_miller %>% 
   transmute(source = 'allen-miller',
-            subject = str_c('am', sub_id, sep='_'),
+            subject = str_c("am", sub_id, exp_num, sep="_"),
             phoneme = str_sub(word, 1, 1),
             vot = VOT,
+            vowel_duration = vowel,
+            final_phoneme =
+              word %>%
+              str_split(pattern="[aeiou]+") %>%
+              map_chr(~.[2]) %>%
+              factor() %>%
+              fct_recode("k"="ck", "d"="ld"),
+            final_closure = closure,
+            final_aspiration = aspiration,
+            speech_rate_condition = factor(speed, levels=c("slow", "fast")),
             prevoiced = NA,
             word = word,
             sex = NA,
@@ -107,11 +117,11 @@ allen_miller <- allen_miller %>%
   
 # Put it all together
 
-stops <- data_frame(phoneme = c('b', 'd', 'g', 'p', 't', 'k'),
-                    voicing = rep(factor(c('voiced', 'voiceless')), each=3),
-                    place = rep(factor(c('lab', 'cor', 'dor'),
-                                       levels = c('lab', 'cor', 'dor')),
-                                times=2))
+stops <- tibble(phoneme = c('b', 'd', 'g', 'p', 't', 'k'),
+                voicing = rep(factor(c('voiced', 'voiceless')), each=3),
+                place = rep(factor(c('lab', 'cor', 'dor'),
+                                   levels = c('lab', 'cor', 'dor')),
+                            times=2))
 
 vot <- bind_rows(lev_ari_sentences,
                  lev_ari_convo,
@@ -120,8 +130,8 @@ vot <- bind_rows(lev_ari_sentences,
                  buckeye, 
                  allen_miller) %>%
   mutate(phoneme = tolower(phoneme)) %>%
-  left_join(stops) %>%
+  left_join(stops, by="phoneme") %>%
   mutate(phoneme = factor(phoneme, levels = c('b', 'd', 'g', 'p', 't', 'k')))
 
-devtools::use_data(vot, overwrite=TRUE)
+usethis::use_data(vot, overwrite=TRUE)
 
