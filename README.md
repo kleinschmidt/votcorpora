@@ -85,120 +85,119 @@ See the help page:
 ``` r
 library(votcorpora)
 ?vot
-#>vot                 package:votcorpora                 R Documentation
-#>
-#>_C_o_m_b_i_n_e_d _V_O_T _p_r_o_d_u_c_t_i_o_n _d_a_t_a
-#>
-#>_D_e_s_c_r_i_p_t_i_o_n:
-#>
-#>     Word initial VOT measurements from four different production
-#>     experiments. Two are isolated word reading, one is sentence
-#>     reading, and one is conversational speech from interviews.
-#>
-#>_U_s_a_g_e:
-#>
-#>     vot
-#>     
-#>_F_o_r_m_a_t:
-#>
-#>     A data frame with 14,262 observations of 12 variables:
-#>
-#>     source The source of this observation
-#>
-#>     subject ID of the talker that produced this observation
-#>
-#>     phoneme Phoneme whose VOT was measured
-#>
-#>     final_phoneme Final phoneme in the word (‘allen-miller’ only; all
-#>          voiced/voiceless stops)
-#>
-#>     vot Voice onset time in ms
-#>
-#>     vowel_duration Duration of the following vowel in ms
-#>
-#>     final_closure Closure duration of final stop (‘allen-miller’
-#>          only).
-#>
-#>     final_aspiration Duration of release burst of final stop
-#>          (‘allen-miller’ only).
-#>
-#>     prevoiced For voiced stops, TRUE if prevoicing was present, FALSE
-#>          if not. NA for voiceless stops
-#>
-#>     word Word that the phoneme occurred in
-#>
-#>     sex The sex of the talker ('m' or 'f'), NA if missing (‘bbg09’).
-#>
-#>     age The age of the talker, NA if missing (‘bbg09’ and ‘gva13’).
-#>
-#>     age_group The age group of the talker ('o' for over 40, and 'y'
-#>          for under 30; based on the Buckeye Corpus scheme).
-#>
-#>     bilingual TRUE for French-English bilinguals, FALSE for english
-#>          monolinguals
-#>
-#>     speech_rate The local speech rate (for Buckeye only) in syllables
-#>          per second. This is calculated based on the number of vowels
-#>          in the continuous speech window around the word where VOT was
-#>          extracted.
-#>
-#>     speech_rate_condition Allen & Miller (1999) elicited slow and fast
-#>          speech rates in their Experiment 2 by varying the
-#>          instructions and the time that the word was displayed (1500ms
-#>          for the "slow" rate, and 750ms for the "fast" rate)
-#>     .
-#>
-#>     stop_length The length of the whole stop, from burst to following
-#>          sonorant onset (Buckeye only), in ms.
-#>
-#>     voicing Is the phoneme ‘voiced’ or ‘voiceless’.
-#>
-#>     place Place of articulation. ‘cor’ for coronal, ‘lab’ for labial,
-#>          and ‘dor’ for dorsal.
-#>
-#>_D_e_t_a_i_l_s:
-#>
-#>     The sources are
-#>
-#>     bbg09 Baese-Berk & Goldrick (2009), experiment 1 measured voice
-#>          onset time for monosyllabic words with word-initial voiceless
-#>          stops. Some words had voiced minimal pair, while others did
-#>          not. Words were read in isolation with other monosyllabic
-#>          fillers that did not have initial stops. Experiment 1a only
-#>          had /p/-initial words, and Experiment 1b had /t/ and /k/.
-#>
-#>     gva13 Goldrick, Vaughn, & Murphy (2013), experiment 1 is analogous
-#>          to ‘bbg09’ but with voiced stops.
-#>
-#>     allen-miller Allen & Miller (1999). Experiment 1 was similar to
-#>          ‘gva13’ and measured VOTs for voiced and voiceless stops in
-#>          monosyllabic words from . Experiment 2 was the same as
-#>          Experiment 1 but included the additional manipulation of
-#>          speaking rate (fast and slow). Prevoiced stops are coded as
-#>          NA. Since all words were monosyllabic with a final stop
-#>          consonant, the stop consonant phoneme is included
-#>          (‘final_phoneme’), as is the measurements of closure and
-#>          aspiration duration (‘final_closure’ and ‘final_aspiration’).
-#>
-#>     levari-sent Lev-Ari, S., & Peperkamp, S. (2013). English-French
-#>          bilinguals (English L1) read 16 sentences, 10 of which
-#>          contained one word each starting with /p/, /t/, and /k/.
-#>          (Items are the English sentences from Fowler, Sramkoc,
-#>          Ostrya, Rowlanda, & Halle, 2008)
-#>
-#>     levari-convo A subset of the talkers from ‘levari-sent’ conducted
-#>          interviews, from which VOTs of all word-initial voiceless
-#>          stops were measured.
-#>
-#>     buckeye Nelson, Noah & Wedel, Andrew (under revision).  The
-#>          phonetic specificity of competition: Contrastive
-#>          hyperarticulation of voice onset time in conversational
-#>          English.  VOTs manually extracted from the Buckeye Corpus of
-#>          conversational speech by Andy Wedel. Age is coded as old
-#>          (40+) or young (under 40).  Includes two measures of local
-#>          speech rate, syllables per second and total stop length.
-#>
-#>
+#> vot                 package:votcorpora                 R Documentation
+#> 
+#> Combined VOT production data
+#> 
+#> Description:
+#> 
+#>      Word initial VOT measurements from four different production
+#>      experiments. Two are isolated word reading, one is sentence
+#>      reading, and one is conversational speech from interviews.
+#> 
+#> Usage:
+#> 
+#>      vot
+#>      
+#> Format:
+#> 
+#>      A data frame with 14,262 observations of 12 variables:
+#> 
+#>      source The source of this observation
+#> 
+#>      subject ID of the talker that produced this observation
+#> 
+#>      phoneme Phoneme whose VOT was measured
+#> 
+#>      final_phoneme Final phoneme in the word (‘allen-miller’ only; all
+#>           voiced/voiceless stops)
+#> 
+#>      vot Voice onset time in ms
+#> 
+#>      vowel_duration Duration of the following vowel in ms
+#> 
+#>      final_closure Closure duration of final stop (‘allen-miller’
+#>           only).
+#> 
+#>      final_aspiration Duration of release burst of final stop
+#>           (‘allen-miller’ only).
+#> 
+#>      prevoiced For voiced stops, TRUE if prevoicing was present, FALSE
+#>           if not. NA for voiceless stops
+#> 
+#>      word Word that the phoneme occurred in
+#> 
+#>      sex The sex of the talker ('m' or 'f'), NA if missing (‘bbg09’).
+#> 
+#>      age The age of the talker, NA if missing (‘bbg09’ and ‘gva13’).
+#> 
+#>      age_group The age group of the talker ('o' for over 40, and 'y'
+#>           for under 30; based on the Buckeye Corpus scheme).
+#> 
+#>      bilingual TRUE for French-English bilinguals, FALSE for english
+#>           monolinguals
+#> 
+#>      speech_rate The local speech rate (for Buckeye only) in syllables
+#>           per second. This is calculated based on the number of vowels
+#>           in the continuous speech window around the word where VOT was
+#>           extracted.
+#> 
+#>      speech_rate_condition Allen & Miller (1999) elicited slow and fast
+#>           speech rates in their Experiment 2 by varying the
+#>           instructions and the time that the word was displayed (1500ms
+#>           for the "slow" rate, and 750ms for the "fast" rate).
+#> 
+#>      stop_length The length of the whole stop, from burst to following
+#>           sonorant onset (Buckeye only), in ms.
+#> 
+#>      voicing Is the phoneme ‘voiced’ or ‘voiceless’.
+#> 
+#>      place Place of articulation. ‘cor’ for coronal, ‘lab’ for labial,
+#>           and ‘dor’ for dorsal.
+#> 
+#> Details:
+#> 
+#>      The sources are
+#> 
+#>      bbg09 Baese-Berk & Goldrick (2009), experiment 1 measured voice
+#>           onset time for monosyllabic words with word-initial voiceless
+#>           stops. Some words had voiced minimal pair, while others did
+#>           not. Words were read in isolation with other monosyllabic
+#>           fillers that did not have initial stops. Experiment 1a only
+#>           had /p/-initial words, and Experiment 1b had /t/ and /k/.
+#> 
+#>      gva13 Goldrick, Vaughn, & Murphy (2013), experiment 1 is analogous
+#>           to ‘bbg09’ but with voiced stops.
+#> 
+#>      allen-miller Allen & Miller (1999). Experiment 1 was similar to
+#>           ‘gva13’ and measured VOTs for voiced and voiceless stops in
+#>           monosyllabic words from . Experiment 2 was the same as
+#>           Experiment 1 but included the additional manipulation of
+#>           speaking rate (fast and slow). Prevoiced stops are coded as
+#>           NA. Since all words were monosyllabic with a final stop
+#>           consonant, the stop consonant phoneme is included
+#>           (‘final_phoneme’), as is the measurements of closure and
+#>           aspiration duration (‘final_closure’ and ‘final_aspiration’).
+#> 
+#>      levari-sent Lev-Ari, S., & Peperkamp, S. (2013). English-French
+#>           bilinguals (English L1) read 16 sentences, 10 of which
+#>           contained one word each starting with /p/, /t/, and /k/.
+#>           (Items are the English sentences from Fowler, Sramkoc,
+#>           Ostrya, Rowlanda, & Halle, 2008)
+#> 
+#>      levari-convo A subset of the talkers from ‘levari-sent’ conducted
+#>           interviews, from which VOTs of all word-initial voiceless
+#>           stops were measured.
+#> 
+#>      buckeye Nelson, Noah & Wedel, Andrew (under revision).  The
+#>           phonetic specificity of competition: Contrastive
+#>           hyperarticulation of voice onset time in conversational
+#>           English.  VOTs manually extracted from the Buckeye Corpus of
+#>           conversational speech by Andy Wedel. Age is coded as old
+#>           (40+) or young (under 40).  Includes two measures of local
+#>           speech rate, syllables per second and total stop length.
+#> 
+#> 
 
 ```
 
